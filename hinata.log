@@ -1,0 +1,243 @@
+2026-02-19 15:09:09,990 [INFO] Web Dashboard Started
+2026-02-19 15:09:11,738 [INFO] HTTP Request: POST https://api.telegram.org/bot7537529456:AAGzlMDTSgH3x1Zuz4UB3kn3ookG0uypiVg/setMyCommands "HTTP/1.1 200 OK"
+2026-02-19 15:09:11,741 [INFO] Hinata Initialized
+2026-02-19 15:09:11,991 [INFO] HTTP Request: POST https://api.telegram.org/bot7537529456:AAGzlMDTSgH3x1Zuz4UB3kn3ookG0uypiVg/getMe "HTTP/1.1 200 OK"
+2026-02-19 15:09:11,992 [INFO] Application started
+2026-02-19 15:09:12,252 [INFO] HTTP Request: POST https://api.telegram.org/bot7537529456:AAGzlMDTSgH3x1Zuz4UB3kn3ookG0uypiVg/deleteWebhook "HTTP/1.1 200 OK"
+2026-02-19 15:09:12,253 [INFO] Hinata Live and Polling
+2026-02-19 15:09:12,255 [INFO] Auto-cleanup: 1 items removed from downloads folder.
+2026-02-19 15:09:17,316 [INFO] HTTP Request: POST https://api.telegram.org/bot7537529456:AAGzlMDTSgH3x1Zuz4UB3kn3ookG0uypiVg/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-19 15:09:17,316 [ERROR] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-19 15:09:17,316 [ERROR] Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-19 15:09:22,784 [INFO] HTTP Request: POST https://api.telegram.org/bot7537529456:AAGzlMDTSgH3x1Zuz4UB3kn3ookG0uypiVg/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-19 15:09:22,784 [ERROR] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-19 15:09:22,784 [ERROR] Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-19 15:09:29,233 [INFO] HTTP Request: POST https://api.telegram.org/bot7537529456:AAGzlMDTSgH3x1Zuz4UB3kn3ookG0uypiVg/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-19 15:09:29,234 [ERROR] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-19 15:09:29,234 [ERROR] Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-19 15:09:33,074 [INFO] HTTP Request: POST https://api.telegram.org/bot7537529456:AAGzlMDTSgH3x1Zuz4UB3kn3ookG0uypiVg/getUpdates "HTTP/1.1 200 OK"
+2026-02-19 15:09:37,178 [INFO] HTTP Request: POST https://api.telegram.org/bot7537529456:AAGzlMDTSgH3x1Zuz4UB3kn3ookG0uypiVg/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-19 15:09:37,178 [ERROR] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-19 15:09:37,178 [ERROR] Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-19 15:09:41,998 [INFO] HTTP Request: POST https://api.telegram.org/bot7537529456:AAGzlMDTSgH3x1Zuz4UB3kn3ookG0uypiVg/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-19 15:09:42,001 [ERROR] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-19 15:09:42,001 [ERROR] Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-19 15:09:45,992 [INFO] HTTP Request: POST https://api.telegram.org/bot7537529456:AAGzlMDTSgH3x1Zuz4UB3kn3ookG0uypiVg/getUpdates "HTTP/1.1 200 OK"
+2026-02-19 15:09:46,274 [INFO] HTTP Request: POST https://api.telegram.org/bot7537529456:AAGzlMDTSgH3x1Zuz4UB3kn3ookG0uypiVg/getUpdates "HTTP/1.1 401 Unauthorized"
+2026-02-19 15:09:46,276 [ERROR] Invalid token; aborting
+2026-02-19 15:29:32,758 [INFO] Web Dashboard Started
+2026-02-19 15:30:24,877 [INFO] Web Dashboard Started
+2026-02-19 15:30:26,333 [INFO] HTTP Request: POST https://api.telegram.org/bot7537529456:AAGzlMDTSgH3x1Zuz4UB3kn3ookG0uypiVg/setMyCommands "HTTP/1.1 401 Unauthorized"
+2026-02-19 15:30:26,334 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<start_bot() done, defined at C:\Users\shaun\Downloads\hinata-last-run-main\hinata-last-run-main\bot.py:2666> exception=InvalidToken('Unauthorized')>
+Traceback (most recent call last):
+  File "C:\Users\shaun\Downloads\hinata-last-run-main\hinata-last-run-main\bot.py", line 2705, in start_bot
+    await app.bot.set_my_commands(cmds)
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_extbot.py", line 3185, in set_my_commands
+    return await super().set_my_commands(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 7044, in set_my_commands
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\telegram\request\_baserequest.py", line 326, in _request_wrapper
+    raise InvalidToken(message)
+telegram.error.InvalidToken: Unauthorized
+2026-02-19 15:33:43,245 [INFO] Web Dashboard Started
+2026-02-19 15:33:44,005 [ERROR] Error stopping app: This Application is not running!
+2026-02-19 15:33:44,005 [INFO] Bot Stopped
+2026-02-19 21:24:31,677 [INFO] Web Dashboard Started
+2026-02-19 21:24:34,876 [INFO] HTTP Request: POST https://api.telegram.org/bot7537529456:AAFOcKDkal0ilSGff3iPL7lzkNYOg1tRoTc/getMe "HTTP/1.1 401 Unauthorized"
+2026-02-19 21:24:34,877 [ERROR] Failed to start bot: The token `7537529456:AAFOcKDkal0ilSGff3iPL7lzkNYOg1tRoTc` was rejected by the server.
+2026-02-19 21:24:34,878 [ERROR] CRITICAL: Your Telegram Bot Token is INVALID. Please check @BotFather.
+2026-02-19 21:24:34,879 [INFO] Auto-cleanup: 1 items removed from downloads folder.
+2026-02-19 22:06:07,343 [INFO] Web Dashboard Started
+2026-02-19 22:06:08,053 [ERROR] Error stopping app: This Application is not running!
+2026-02-19 22:06:08,053 [INFO] Bot Stopped
+2026-02-19 22:06:38,938 [INFO] Web Dashboard Started
+2026-02-19 22:06:42,327 [INFO] HTTP Request: POST https://api.telegram.org/bot7537529456:AAFOcKDkal0ilSGff3iPL7lzkNYOg1tRoTc/getMe "HTTP/1.1 401 Unauthorized"
+2026-02-19 22:06:42,328 [ERROR] Failed to start bot: The token `7537529456:AAFOcKDkal0ilSGff3iPL7lzkNYOg1tRoTc` was rejected by the server.
+2026-02-19 22:06:42,328 [ERROR] CRITICAL: Your Telegram Bot Token is INVALID. Please check @BotFather.
+2026-02-19 22:06:42,329 [INFO] Auto-cleanup: 1 items removed from downloads folder.
+2026-02-19 22:10:46,706 [INFO] Web Dashboard Started
+2026-02-19 22:10:47,451 [ERROR] Error stopping app: This Application is not running!
+2026-02-19 22:10:47,451 [INFO] Bot Stopped
+2026-02-19 22:11:02,941 [INFO] Web Dashboard Started
+2026-02-19 22:11:04,500 [INFO] HTTP Request: POST https://api.telegram.org/bot7537529456:AAFOcKDkal0ilSGff3iPL7lzkNYOg1tRoTc/getMe "HTTP/1.1 401 Unauthorized"
+2026-02-19 22:11:04,502 [ERROR] Failed to start bot: The token `7537529456:AAFOcKDkal0ilSGff3iPL7lzkNYOg1tRoTc` was rejected by the server.
+2026-02-19 22:11:04,502 [ERROR] CRITICAL: Your Telegram Bot Token is INVALID. Please check @BotFather.
+2026-02-19 22:11:04,503 [INFO] Auto-cleanup: 1 items removed from downloads folder.
